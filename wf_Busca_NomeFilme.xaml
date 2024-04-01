@@ -6,7 +6,7 @@
   <this:UseBrowserChromeRottenTomatoesMoviesTVShowsMovieTrailersReviewsRottenTomatoes.arg_inStrSiteURL>
     <InArgument x:TypeArguments="x:String" />
   </this:UseBrowserChromeRottenTomatoesMoviesTVShowsMovieTrailersReviewsRottenTomatoes.arg_inStrSiteURL>
-  <sap:VirtualizedContainerService.HintSize>954.4,1635.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1410.4,1272</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,7 +112,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="wf_Busca_NomeFilme" sap:VirtualizedContainerService.HintSize="602.4,1300" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="wf_Busca_NomeFilme" sap:VirtualizedContainerService.HintSize="602.4,1207.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,19 +120,19 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="540,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Iniciando wf_Busca_NomeFilme&quot;]" />
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="540,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Buscando pelo filme: &quot;+arg_inStrNomeFilme]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rotten Tomatoes: Movies | TV Shows | Movie Trailers | Reviews | Rotten Tomatoes" sap:VirtualizedContainerService.HintSize="540,680.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="b57f5d09-26e0-4d43-b026-a040d0955819" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Rotten Tomatoes: Movies | TV Shows | Movie Trailers | Reviews | Rotten Tomatoes" sap:VirtualizedContainerService.HintSize="540,588" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="b57f5d09-26e0-4d43-b026-a040d0955819" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,331.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b57f5d09-26e0-4d43-b026-a040d0955819" Text="[arg_inStrNomeFilme+&quot;[k(enter)]&quot;]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b57f5d09-26e0-4d43-b026-a040d0955819" Text="[arg_inStrNomeFilme+&quot;[k(enter)]&quot;]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.rottentomatoes.com/" CvTextArea="590, 603, 79, 18" CvTextArgument="Iron man" CvType="Text" DesignTimeRectangle="541, 591, 543, 44" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' class='search-text' placeholder='Search*' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' class='search-text' placeholder='Search*' type='text' aaname='' /&gt;" Guid="f781b3dd-d44f-4ae1-ab39-f4445762f400" InformativeScreenshot="42d32234af8ae799e6b3dc3253738334.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rotten Tomatoes*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -143,31 +143,6 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,77.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="353.6,201.6" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="b57f5d09-26e0-4d43-b026-a040d0955819" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NKeyboardShortcuts>
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
